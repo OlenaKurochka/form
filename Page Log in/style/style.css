@@ -1,0 +1,262 @@
+html{
+    font-size: 10px; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1680px;
+    background-color: #E5E5E5;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.025rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.container{
+    width: 35rem;
+    background-color: #FFFFFF;
+    padding: 12rem 9rem 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.title{
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+}
+
+.title h1{
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 6.8rem;
+    color: #42505C;
+}
+
+.title p{
+    color: rgba(64, 64, 64, .99);
+}
+
+.input_form{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+}
+
+.input_form label{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 1rem;
+    font-size: 1.2rem;
+}
+
+.input_form input{
+    height: 4.8rem;
+    padding-left: 3.5rem;
+    border: 1px solid gray;
+}
+
+.input_login{
+    background-image: url(../img/icon_user_gray.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1rem;
+}
+
+.input_password{
+    background-image: url(../img/icon_key.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 1rem;
+}
+
+.input_form>a {
+    text-decoration: none;
+    color: #4743E0;
+    margin: 1rem 0 4rem;
+}
+
+.input_form>a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    margin: 5rem 0 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox{
+    margin-right: 1rem;
+}
+
+.submit{
+    background-color: #4743E0;
+    border: none;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 10rem;
+    height: 4.8rem;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #252199;
+}
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration p{
+    color: rgba(64, 64, 64, .99);
+}
+
+.registration >a{
+    text-decoration: none;
+    color: #4743E0;
+}
+
+.registration>a:hover{
+    text-decoration: underline;
+}
+
+.main_img{
+    position: absolute;
+    bottom: 2rem;
+    left: 47rem;
+    z-index: 2;
+}
+
+/* для Смартфоів — 320 пікселів, 480 та вище до 767 пікселів */
+
+@media screen and (max-width: 767px) {
+    body{
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .container{
+        width: 30rem;
+        background-color: #FFFFFF;
+        padding: 2rem 5rem;
+        position: relative;
+    }
+
+    .title{
+        align-items: flex-start;
+        flex-direction: column;
+        border-bottom: 2px dashed rgba(0, 0, 0, .2);
+    }
+
+    .title h1{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .title p{
+        width: 100%;
+    }
+
+    .input_form input{
+        height: 4rem;
+    }
+
+    .input_form{
+        border-bottom: 2px dashed rgba(0, 0, 0, .2);  
+    }
+
+    .button{
+        margin: 2rem 0 18rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .registration{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .registration{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+ 
+    }
+
+    .main_img{
+        position: absolute;
+        width: 250px;
+        bottom: 26rem;
+        left: 9rem;
+        z-index: 2;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .container{
+        width: 25rem;
+        padding: 2rem 4rem;
+    }
+
+    .main_img{
+        width: 250px;
+        bottom: 26rem;
+        left: 5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+    body{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .container{
+        width: 20rem;
+        padding: 1rem 4rem;
+    }
+
+
+    .title h1{
+        font-size: 2rem;
+    }
+
+    .input_form input{
+        height: 2.5rem;
+    }
+
+    .input_form{
+        border-bottom: 2px dashed rgba(0, 0, 0, .2);  
+    }
+
+    .button{
+        margin: 2rem 0 18rem;
+        flex-direction: column;
+    }
+
+
+    .main_img{
+        width: 250px;
+        bottom: 27rem;
+        left: 2rem;
+    }
+    
+}

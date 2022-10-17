@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Input your information</title>
+    
+</head>
+<body>
+    <img class="main_img" src="./img/first_image.svg" alt="first_image">
+    <div class="information">
+        <a href="./Page Log in/index.html">Allready a member?<img src="./img/icon_user.svg" alt="icon_user"></a>
+
+        <div class="title">
+            <h1>Input your information</h1>
+            <p> 
+                We need you to help us with some basic information for your account creation. 
+                Here are our <a href="#">terms and conditins</a>. Please read them carefully. 
+                We are GDRP compliiant
+            </p>
+        </div>
+
+        <div class="input_forms">
+            <div class="input_information">
+                <div>
+                    <div class="input_form">
+                        <label for="firstname" title="First name">First name <img src="./img/question_mark.svg" alt="question_mark"></label>
+                        <input type="text" id="firstname" placeholder="John">
+                    </div>
+                    <div class="input_form">
+                        <label for="lastname" title="Last name">Last name <img src="./img/question_mark.svg" alt="question_mark"></label>
+                        <input type="text" id="lastname" placeholder="Smit">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input_form">
+                        <label for="company" title="Company">Company <img src="./img/question_mark.svg" alt="question_mark"></label>
+                        <input type="text" id="company" placeholder="John Smit">
+                    </div>
+                    <div class="input_form">
+                        <label for="work_email" title="Work email">Work email <img src="./img/question_mark.svg" alt="question_mark"></label>
+                        <input type="email" id="work_email" placeholder="John Smit">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="input_form">
+                        <label for="number_of_employees" title="Number of employees">Number of employees <span>(optional)</span> <img src="./img/question_mark.svg" alt="question_mark"></label>
+                        <div class="input_radio">
+                            <div>
+                                <input class="radio" type="radio" name="0<20" id="first">
+                                    <label for="first">
+                                        <span>0<20</span>
+                                    </label>
+                            </div> 
+                            <div>
+                                <input class="radio" type="radio" name="0<20" id="second">
+                                    <label for="second">
+                                        <span>20<50</span>
+                                    </label>
+                            </div>  
+                            <div>
+                                <input class="radio" type="radio" name="0<20" id="third">
+                                    <label for="third">
+                                        <span>50<100</span>
+                                    </label>
+                            </div> 
+                            <div>
+                                <input class="radio" type="radio" name="0<20" id="fourth">
+                                    <label for="fourth">
+                                        <span>100<...</span>
+                                    </label>
+                            </div> 
+                        </div>  
+                    </div>
+                    <div class="input_form">
+                        <label for="phone_number" title="Phone number">Phone number <span>(optional)</span> <img src="./img/question_mark.svg" alt="question_mark"></label>
+                        <input type="tel" id="phone_number" placeholder="+380 00 000 00 00">
+                    </div>
+                </div>
+            </div>
+
+            <div class="input_password">
+                 <div class="input_form">
+                    <label for="password" title="Password">Password <img src="./img/question_mark.svg" alt="question_mark"></label>
+                    <input type="password" id="password">
+                </div>
+                <div class="input_form">
+                    <label for="confirm_password" title="Confirm password">Confirm password <img src="./img/question_mark.svg" alt="question_mark"></label>
+                    <input type="password" id="confirm_password">
+                </div>
+               
+            </div>
+        </div>
+        <div class="input_footer">
+            <div>
+                <input type="checkbox" name="" id="checkbox">
+                <label for="checkbox">I agree with <a href="#">terms and conditins</a>.</label>
+            </div>
+            <div>
+                <input class="submit" type="submit" value="Register">
+            </div>
+        </div>
+    </div>
+    
+   
+
+</body>
+</html>

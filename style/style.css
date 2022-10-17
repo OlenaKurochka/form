@@ -1,0 +1,406 @@
+html{
+    font-size: 10px; 
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1680px;
+    background-color: #E5E5E5;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.025rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.information{
+    width: 85rem;
+    background-color: #FFFFFF;
+    padding: 4rem 10rem;
+    position: relative;
+}
+
+.information>a{
+    color: #4743E0;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70rem;
+}
+
+.information>a:hover, .input_footer>div label a:hover, .title p a:hover {
+    text-decoration: underline;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+
+}
+.title h1{
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 6.8rem;
+    color: #42505C;
+    width: 50%;
+    margin: 1.5rem 5rem 1.5rem 0 ;
+}
+
+.title p{
+    color: #404040;
+    opacity: 0.99;
+    width: 50%;
+}
+
+.title p a{
+    font-weight: 700;
+    color: #4743E0;
+    text-decoration: none;
+}
+
+
+.input_forms{
+    margin-top: 3rem;
+
+}
+
+.input_information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+}
+
+.input_password{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+}
+
+
+.input_information>div{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input_form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.input_form label{
+    display: flex;
+    color: rgb(51, 51, 51);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    z-index: 2;
+}
+
+.input_form label span{
+    color: rgba(51, 51, 51, .34);
+}
+
+.input_form label img{
+    position: absolute;
+    top: 1rem;
+    left: 36rem;
+}
+
+.input_form input{
+    height: 5rem;
+    padding-left: 1.7rem;
+}
+
+.input_radio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio{
+    display: none;
+}
+
+.radio + label > span{
+    width: 8rem;
+    height: 5rem;
+    border: 1px solid #D1D1D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio:checked + label > span{
+    border: 1px solid #4743E0;
+    color: #4743E0;
+    font-weight: 700;
+}
+
+
+.radio:hover + label > span{
+    border: 1px solid #9491fc;
+
+}
+
+.input_password{
+    margin-top: 3rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
+}
+
+.input_password .input_form{
+    width: 45%;
+}
+
+
+.input_footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.input_footer>div{
+    display: flex;
+    align-items: center;
+}
+
+.input_footer>div input{
+    margin-right: 1rem;
+    height: 3rem;
+}
+
+.input_footer>div label{
+    color: #404040; 
+}
+
+.input_footer>div label a{
+    font-weight: 700;
+    color: #4743E0;
+    text-decoration: none;
+}
+
+.input_footer div .submit{
+    background-color: #4743E0;
+    border: none;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 10rem;
+    height: 4.8rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.input_footer div .submit:hover{
+    background-color: #252199;
+}
+
+.main_img{
+    position: absolute;
+    z-index: 1;
+    left: 92.8rem;
+    top: 8.1rem;
+}
+
+/* для Смартфоів — 320 пікселів, 480 та вище до 767 пікселів */
+
+@media screen and (max-width: 767px) {
+    body{
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+    
+    .information{
+        width: 30rem;
+        background-color: #FFFFFF;
+        padding: 2rem 5rem;
+        position: relative;
+    }
+    .information>a{
+        color: #4743E0;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15rem;
+    }
+    .title{
+        align-items: flex-start;
+        flex-direction: column;
+        border-bottom: 2px dashed rgba(0, 0, 0, .2);
+    }
+
+    .title h1{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .title p{
+        width: 100%;
+    }
+
+   .input_form{
+        width: 90%;
+   }
+
+    .input_password{
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    
+
+    .input_information, .input_password{
+        border-bottom: 2px dashed rgba(0, 0, 0, .2)
+    }
+
+
+    .input_information>div{
+        flex-direction: column;
+
+    }
+    
+    .input_password .input_form{
+        width: 90%;
+
+    }
+
+    .input_form label{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .input_form input{
+        height: 3rem;
+    }
+
+    .radio + label > span{
+        width: 5rem;
+        height: 3rem;
+        font-size: 1.3rem;
+
+    }
+    .input_form label img{
+        top: 1rem;
+        left: 25rem;
+    }
+
+    .input_footer{
+        flex-direction: column;
+        margin-top: 2rem;
+        z-index: 2;
+    }
+    .input_footer div .submit{
+        margin-top: 5rem;
+        z-index: 2;
+        margin-bottom: 9rem;
+    }
+
+    .main_img{
+        left: 16rem;
+        top: 111rem;
+        width: 250px;
+        z-index:1;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    
+    .information{
+        width: 25rem;
+        padding: 2rem 4rem;
+
+    }
+
+    .information>a{
+        margin-left: 12rem;
+    }
+
+    .title h1{
+        font-size: 2rem;
+    }
+
+    .input_form{
+        width: 100%;
+   }
+
+    .input_password .input_form{
+        width: 100%;
+
+    }
+
+    .input_form label img{
+        top: 0.5rem;
+        left: 24rem;
+    }
+
+    .main_img{
+        left: 14rem;
+        top: 116rem;
+        width: 200px;
+        z-index:1;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+    body{
+        font-size: 0.8rem;
+        margin: 0.5rem;
+        line-height: 1.5rem;
+    }
+    
+    .information{
+        width: 20rem;
+        padding: 1rem 2rem;
+
+    }
+
+    .information>a{
+        margin-left: 10rem;
+    }
+
+    .title h1{
+        font-size: 1.5rem;
+    }
+
+    .input_form{
+        width: 100%;
+   }
+
+    .input_password .input_form{
+        width: 100%;
+
+    }
+
+    .input_form label{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        z-index: 2;
+    }
+
+    .input_form label img{
+        top: 0rem;
+        left: 18rem;
+    }
+
+    .input_footer div .submit{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .main_img{
+        left: 9.5rem;
+        top: 93rem;
+        width: 150px;
+        z-index:1;
+    }
+
+}
